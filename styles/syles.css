@@ -1,0 +1,72 @@
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url( "./images/background.jpg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-bar {
+    background-color: rgba( 5, 139, 156, 0.9 );
+    width: 100%;
+    color: #ffffff;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 8vw;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    position: relative;
+    left: 12px;
+}
+
+h2 {
+    font-family: 'DM Sans', sans-serif;
+    position: relative;
+    font-size: 17px;
+    left: 12px;
+}
+
+.card-container {
+    position: absolute;
+    top: 26vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    justify-content: space-around;
+}
+
+.team-member-card {
+    width: 250px;
+    height: 34vh;
+    margin-bottom: 5vh;
+    box-shadow: 2px 5px 5px rgb( 5, 94, 105 );
+    border-top-left-radius: 10px;
+    background-color: rgb( 241, 248, 248 );
+}
+
+.team-member-card-top {
+    background-color: rgb( 139, 216, 221 );
+    border: 2px solid rgb( 139, 216, 221 );
+    border-top-left-radius: 10px;
+    width: 246px;
+}
+
+.team-member-card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
