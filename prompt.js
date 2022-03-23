@@ -1,15 +1,15 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Engineer = require('../lib/Engineer');
-const Intern = require('../lib/Intern');
-const Manager = require('../lib/Manager');
-const Employee = require('../lib/Employee');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
+const Manager = require('./lib/Manager');
+const Employee = require('./lib/Employee');
 
 const employee = [];
 
 function init(){
-    startHtml();
-    startMenu();
+startHtml();
+startMenu();
 }
 function startMenu() {
     console.log("Build your Team!!");
@@ -142,7 +142,7 @@ function startMenu() {
 
     })
 };
-
+startMenu();
 function startHtml() {
     const html = `<!DOCTYPE html>
     <html lang="en">

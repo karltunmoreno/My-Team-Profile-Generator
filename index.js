@@ -1,13 +1,13 @@
-//var team = require("./prompt");
+var team = require("./prompt");
 
-//team();
+team();
 const inquirer = require('inquirer');
 const fs = require('fs');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
-
-const employee = [];
+const Employee = require('./lib/Employee')
+const Employee = [];
 
 function init(){
     startHtml();
