@@ -1,13 +1,17 @@
 var team = require("./prompt");
 
-team();
+//team();
 const inquirer = require('inquirer');
 const fs = require('fs');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
-const Employee = require('./lib/Employee')
-const Employee = [];
+//const Employee = require("./lib/Employee");
+const { Console } = require("console");
+const employee = []
+
+
+
 
 function init(){
     startHtml();
@@ -36,7 +40,8 @@ function startMenu() {
             choices:[
                 "Manager",
                 "Engineer",
-                "Intern"
+                "Intern",
+                "Employee"
             ],
             name: "role",
             validate: roleInput => {
@@ -124,6 +129,7 @@ function startMenu() {
         ])
         .then(function({roleInfo, addMember}){
             let newMember;
+            console.log (roleInfo, addMember)
             if (role === "Engineer"){
                 newMember = new Engineer (name,id,email,roleInfo);
             } else if (role === "Intern") {

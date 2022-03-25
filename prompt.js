@@ -34,7 +34,9 @@ function startMenu() {
             choices:[
                 "Manager",
                 "Engineer",
-                "Intern"
+                "Intern",
+                "Employee"
+
             ],
             name: "role",
             validate: roleInput => {
@@ -167,7 +169,7 @@ function startHtml() {
 }
 
 function addHtml(member) {
-    return new Promise(function(resolve, reject) {
+    return new Promise(function(resolve,) {
         const name = member.getName();
         const role = member.getRole();
         const id = member.getId();
