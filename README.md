@@ -30,3 +30,58 @@ WHEN I select the intern option
 THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
+
+____________________________________________________________________________________________________________________________________________________________
+
+## What was done
+
+Using NODE and ES6 created and a cli app that asks you about your team and prints out a quick HTML file so you can show case it.
+
+### Instalation
+
+- Clone or Fork the Repo to your computer.
+- Install NODEjs.
+- Use NPM to install inquirer and jest:
+
+```
+
+npm install inquirer && jest 
+
+```
+
+### Usage
+
+Run the following from the directory where you have downloaded the repo.
+
+```
+
+node index.js
+
+```
+
+Once the program starts answer all the relevant questions until the program finished.
+
+The new team profile will be sotred in the dist folder and you can copy it to your working site.
+
+### Video of Usage
+
+
+https://www.youtube.com/watch?v=0E-6lsa0wlk&t=14s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
